@@ -7,6 +7,13 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
+  "rust_analyzer",
+  "dartls",
+  "prismals",
+  "graphql",
+  "gopls",
+  "arduino_langage_server",
+  "terraformls",
 }
 
 local settings = {
