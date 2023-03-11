@@ -1,18 +1,22 @@
 local servers = {
 	"sumneko_lua",
 	"cssls",
+  "omnisharp",
+	"jdtls",
+  "solargraph",
+  "intelephense",
 	"html",
 	"tsserver",
 	"pyright",
 	"bashls",
+	"rust_analyzer",
 	"jsonls",
 	"yamlls",
-  "rust_analyzer",
-  "dartls",
-  "prismals",
-  "graphql",
-  "gopls",
-  "terraformls",
+	"dartls",
+	"prismals",
+	"graphql",
+	"gopls",
+	"terraformls",
 }
 
 local settings = {
