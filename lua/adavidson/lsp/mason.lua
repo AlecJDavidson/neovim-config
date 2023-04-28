@@ -3,7 +3,6 @@ local servers = {
 	"cssls",
   "omnisharp",
 	"jdtls",
-  "solargraph",
   "intelephense",
 	"html",
 	"tsserver",
@@ -15,8 +14,6 @@ local servers = {
 	"dartls",
 	"prismals",
 	"graphql",
-	"gopls",
-	"terraformls",
 }
 
 local settings = {
