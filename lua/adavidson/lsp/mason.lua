@@ -1,6 +1,7 @@
 local servers = {
 	"sumneko_lua",
 	"cssls",
+  "clangd",
   "omnisharp",
 	"jdtls",
   "intelephense",
