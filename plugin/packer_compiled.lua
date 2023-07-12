@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -183,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -244,10 +254,25 @@ _G.packer_plugins = {
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-flutter"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/vim-flutter",
+    url = "https://github.com/thosakwe/vim-flutter"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-lsc"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/vim-lsc",
+    url = "https://github.com/natebosch/vim-lsc"
+  },
+  ["vim-lsc-dart"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/vim-lsc-dart",
+    url = "https://github.com/natebosch/vim-lsc-dart"
   },
   ["which-key.nvim"] = {
     loaded = true,
