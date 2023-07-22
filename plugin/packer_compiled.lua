@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -203,11 +208,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/adavidson/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
