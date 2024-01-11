@@ -93,10 +93,18 @@ return packer.startup(function(use)
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", commit = "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" }
 
+  -- Last known working 
+	-- -- Treesitter
+	-- use {
+	-- 	"nvim-treesitter/nvim-treesitter",
+	-- 	commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+	-- }
+
+  -- updated
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+		commit = "8cd2b230174efbf7b5d9f49fe2f90bda6b5eb16e",
 	}
 
   -- Nvim-dap
