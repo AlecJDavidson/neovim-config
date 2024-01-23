@@ -1,4 +1,3 @@
-
 -- TOKYO-NIGHT-THEME
 -- local colorscheme = "tokyonight-night"
 local colorscheme = "tokyonight-storm"

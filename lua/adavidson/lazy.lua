@@ -127,13 +127,13 @@ local plugins = {
     config = function() require('adavidson.theme.colorscheme') end
   },
 
-  {
-    "shaunsingh/nord.nvim",
-    lazy = false,
-    priority = 1000,
-    -- opts = {},
-    config = function() require('adavidson.theme.colorscheme') end
-  },
+  -- {
+  --   "shaunsingh/nord.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- opts = {},
+  --   config = function() require('adavidson.theme.colorscheme') end
+  -- },
 
   -- UI / Navigation
 
