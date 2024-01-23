@@ -33,6 +33,10 @@ local plugins = {
   },
 
   {
+    "lukas-reineke/indent-blankline.nvim"
+  },
+
+  {
     'akinsho/bufferline.nvim',
     version = "*",
     dependencies = "nvim-tree/nvim-web-devicons",
@@ -95,11 +99,13 @@ local plugins = {
     -- opts = {},
   },
   {
-    "L3MON4D3/LuaSnip", -- needs setup
+    "hrsh7th/cmp-nvim-lua", -- needs setup
     -- opts = {},
   },
+
   {
-    "rafamadriz/friendly-snippets", -- needs setup
+    "L3MON4D3/LuaSnip", -- needs setup
+    dependencies = { "rafamadriz/friendly-snippets" },
     -- opts = {},
   },
 
@@ -136,6 +142,11 @@ local plugins = {
   -- },
 
   -- UI / Navigation
+
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
 
   {
     "kyazdani42/nvim-tree.lua",
