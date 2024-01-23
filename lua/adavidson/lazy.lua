@@ -33,7 +33,10 @@ local plugins = {
   },
 
   {
-    "lukas-reineke/indent-blankline.nvim"
+    "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      require('adavidson.plugins.indent-blankline')
+    end,
   },
 
   {
@@ -145,7 +148,10 @@ local plugins = {
 
   {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    config = function()
+      require('adavidson.plugins.lualine')
+    end,
   },
 
   {
