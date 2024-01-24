@@ -69,7 +69,10 @@ local plugins = {
 
   },
   {
-    "nvimtools/none-ls.nvim"
+    "nvimtools/none-ls.nvim",
+    config = function()
+      require('adavidson.plugins.lsp.null-ls')
+    end
   },
   {
     "williamboman/mason-lspconfig.nvim",
