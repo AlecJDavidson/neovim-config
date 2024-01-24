@@ -176,10 +176,10 @@ local plugins = {
     "ahmedkhalf/project.nvim",
     -- opts = {}
   },
-  {
-    "lewis6991/impatient.nvim",
-    -- opts = {}
-  },
+  -- {
+  --   "lewis6991/impatient.nvim",
+  --   -- opts = {}
+  -- },
 
 
   {
