@@ -1,4 +1,3 @@
-
 require "adavidson.options.options"
 require "adavidson.options.keymaps"
 require "adavidson.lazy"
