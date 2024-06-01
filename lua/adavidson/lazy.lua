@@ -19,30 +19,46 @@ local options = {}
 -- plugins
 local plugins = {
 
+  -- Svelte
+  {
+    "evanleck/vim-svelte",
+    ft = { "svelte" },
+  },
+  -- JavaScript plugin
+  {
+    "pangloss/vim-javascript",
+    ft = { "javascript" },
+  },
+  -- TypeScript plugin (Yats)
+  {
+    "HerringtonDarkholme/yats.vim",
+    ft = { "typescript" },
+  },
+
   -- Config
 
   {
     "nvim-treesitter/nvim-treesitter",
     config = function()
-      require('adavidson.plugins.treesitter')
-    end
+      require("adavidson.plugins.treesitter")
+    end,
   },
 
   {
-    'windwp/nvim-autopairs',
+    "windwp/nvim-autopairs",
     event = "InsertEnter",
-    opts = {}
+    opts = {},
   },
 
   {
     "lukas-reineke/indent-blankline.nvim",
     config = function()
-      require('adavidson.plugins.indent-blankline')
+      require("adavidson.plugins.indent-blankline")
     end,
   },
 
   {
-    'akinsho/bufferline.nvim',
+    "akinsho/bufferline.nvim",
     version = "*",
     dependencies = "nvim-tree/nvim-web-devicons",
     -- opts = {},
@@ -50,7 +66,7 @@ local plugins = {
   },
 
   {
-    'numToStr/Comment.nvim',
+    "numToStr/Comment.nvim",
     -- opts = {},
     -- config = function() require('adavidson.plugins.comment') end
   },
@@ -69,14 +85,13 @@ local plugins = {
     "williamboman/mason.nvim",
     -- opts = {},
     -- config = function() require('adavidson.plugins.lsp.mason') end
-
   },
 
   {
     "nvimtools/none-ls.nvim",
     config = function()
-      require('adavidson.plugins.lsp.null-ls')
-    end
+      require("adavidson.plugins.lsp.null-ls")
+    end,
   },
 
   {
@@ -93,16 +108,14 @@ local plugins = {
     "hrsh7th/nvim-cmp", -- needs setup
     -- opts = {},
     -- config = function() require('adavidson.plugins.cmp') end
-
   },
 
   {
     "hrsh7th/cmp-buffer", -- needs setup
     -- opts = {},
     config = function()
-      require('adavidson.plugins.cmp')
-    end
-
+      require("adavidson.plugins.cmp")
+    end,
   },
 
   {
@@ -139,8 +152,8 @@ local plugins = {
     priority = 1000,
     -- opts = {},
     config = function()
-      require('adavidson.plugins.whichkey')
-    end
+      require("adavidson.plugins.whichkey")
+    end,
   },
 
   -- Search
@@ -148,7 +161,7 @@ local plugins = {
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.5",
-    dependencies = { "nvim-lua/plenary.nvim" }
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
 
   -- Themes
@@ -159,8 +172,8 @@ local plugins = {
     priority = 1000,
     -- opts = {},
     config = function()
-      require('adavidson.theme.colorscheme')
-    end
+      require("adavidson.theme.colorscheme")
+    end,
   },
 
   -- {
@@ -174,10 +187,10 @@ local plugins = {
   -- UI / Navigation
 
   {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require('adavidson.plugins.lualine')
+      require("adavidson.plugins.lualine")
     end,
   },
 
@@ -185,18 +198,16 @@ local plugins = {
     "kyazdani42/nvim-tree.lua",
     -- opts = {},
     config = function()
-      require('adavidson.plugins.nvim-tree')
-    end
-
+      require("adavidson.plugins.nvim-tree")
+    end,
   },
 
   {
     "akinsho/toggleterm.nvim",
     -- opts = {},
     config = function()
-      require('adavidson.plugins.toggleterm')
-    end
-
+      require("adavidson.plugins.toggleterm")
+    end,
   },
 
   {
@@ -213,10 +224,9 @@ local plugins = {
     "goolord/alpha-nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require('adavidson.plugins.alpha')
-    end
+      require("adavidson.plugins.alpha")
+    end,
   },
-
 }
 
 require("lazy").setup(plugins, options)
