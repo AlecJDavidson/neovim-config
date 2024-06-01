@@ -1,7 +1,6 @@
 
 require "adavidson.options.keymaps"
 require "adavidson.options.options"
-require "adavidson.plugins.treesitter"
 require "adavidson.plugins.alpha"
 require "adavidson.theme.colorscheme"
 require "adavidson.plugins.bufferline"
