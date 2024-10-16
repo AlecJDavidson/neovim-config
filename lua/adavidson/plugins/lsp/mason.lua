@@ -7,7 +7,7 @@ local servers = {
   "jdtls",
   "intelephense",
   "html",
-  "tsserver",
+  "ts_ls",
   "bashls",
   "rust_analyzer",
   "jsonls",

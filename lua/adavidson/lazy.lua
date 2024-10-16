@@ -73,11 +73,11 @@ local plugins = {
 
   -- Git
 
-  {
-    "lewis6991/gitsigns.nvim",
-    -- opts = {},
-    -- config = function() require('adavidson.plugins.gitsigns') end
-  },
+  -- {
+  --   "lewis6991/gitsigns.nvim",
+  --   -- opts = {},
+  --   -- config = function() require('adavidson.plugins.gitsigns') end
+  -- },
 
   -- Lsp
 
