@@ -19,6 +19,11 @@ local options = {}
 -- plugins
 local plugins = {
 
+
+  -- Gen.nvim
+  -- Minimal configuration
+  { "David-Kunz/gen.nvim" },
+
   -- Svelte
   {
     "evanleck/vim-svelte",
