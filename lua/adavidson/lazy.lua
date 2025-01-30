@@ -42,6 +42,10 @@ local plugins = {
     config = function()
       require("adavidson.plugins.treesitter")
     end,
+    dependencies = {
+      "JoosepAlviste/nvim-ts-context-commentstring", -- allow comments in mixed content files like jsx, html and svelte
+      "windwp/nvim-ts-autotag",                   -- autoclose html tags
+    },
   },
 
   {
