@@ -19,7 +19,6 @@ local options = {}
 -- plugins
 local plugins = {
 
-
   -- Gen.nvim
   -- Minimal configuration
   { "David-Kunz/gen.nvim" },
@@ -170,6 +169,16 @@ local plugins = {
   },
 
   -- Themes
+
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- opts = {},
+  --   config = function()
+  --     require("adavidson.theme.colorscheme")
+  --   end,
+  -- },
 
   {
     "folke/tokyonight.nvim",

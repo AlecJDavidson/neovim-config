@@ -183,7 +183,6 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 
-    C = { "<cmd>Copilot<cr>", "Copilot" },
 }
 
 which_key.setup(setup)
