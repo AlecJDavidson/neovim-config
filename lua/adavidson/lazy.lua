@@ -21,7 +21,9 @@ local plugins = {
 
   -- Gen.nvim
   -- Minimal configuration
-  { "David-Kunz/gen.nvim" },
+  -- { "David-Kunz/gen.nvim" },
+
+  -- Ollama.nvim
 
   -- Svelte
   {
