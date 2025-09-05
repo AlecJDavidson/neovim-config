@@ -5,7 +5,7 @@ end
 
 local setup = {
   plugins = {
-    marks = true, -- shows a list of your marks on ' and `
+    marks = true,    -- shows a list of your marks on ' and `
     registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
     spelling = {
       enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
@@ -13,12 +13,12 @@ local setup = {
     },
     presets = {
       operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
-      motions = true, -- adds help for motions
+      motions = true,   -- adds help for motions
       text_objects = true, -- help for text objects triggered after entering an operator
-      windows = true, -- default bindings on <c-w>
-      nav = true, -- misc bindings to work with windows
-      z = true, -- bindings for folds, spelling and others prefixed with z
-      g = true, -- bindings for prefixed with g
+      windows = true,   -- default bindings on <c-w>
+      nav = true,       -- misc bindings to work with windows
+      z = true,         -- bindings for folds, spelling and others prefixed with z
+      g = true,         -- bindings for prefixed with g
     },
   },
   key_labels = {
@@ -36,24 +36,24 @@ local setup = {
   window = {
     border = "rounded", -- none, single, double, shadow
     position = "bottom", -- bottom, top
-    width = 20, -- width of the popup in %
-    height = 10, -- height of the popup in lines
-    winblend = 30, -- transparency of the popup
+    width = 20,        -- width of the popup in %
+    height = 10,       -- height of the popup in lines
+    winblend = 30,     -- transparency of the popup
   },
   layout = {
-    height = { min = 4, max = 25 }, -- min and max height of the columns
-    width = { min = 20, max = 50 }, -- min and max width of the columns
-    spacing = 3, -- spacing between columns
-    align = "left", -- align columns to the left, right, or center
+    height = { min = 4, max = 25 },                                           -- min and max height of the columns
+    width = { min = 20, max = 50 },                                           -- min and max width of the columns
+    spacing = 3,                                                              -- spacing between columns
+    align = "left",                                                           -- align columns to the left, right, or center
   },
-  ignore_missing = false, -- enable this to hide mappings for which you didn't specify a label
+  ignore_missing = false,                                                     -- enable this to hide mappings for which you didn't specify a label
   hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^", "^M" }, -- hide mapping boilerplate
 }
 
 local opts = {
-  mode = "n", -- NORMAL mode
+  mode = "n",    -- NORMAL mode
   prefix = "<leader>",
-  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  buffer = nil,  -- Global mappings. Specify a buffer number for buffer local mappings
   silent = true, -- use `silent` when creating keymaps
   noremap = true, -- use `noremap` when creating keymaps
   nowait = true, -- use `nowait` when creating keymaps
@@ -76,7 +76,7 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-  ["L"] = {"<cmd>Lazy<cr>", "Lazy"},
+  ["L"] = { "<cmd>Lazy<cr>", "Lazy" },
   g = {
     name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
@@ -123,7 +123,6 @@ local mappings = {
     },
     l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
     q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix" },
-    o = { "<cmd>ollama<cr>", "Ollama" },
     r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
     s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
     S = {
@@ -151,6 +150,15 @@ local mappings = {
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+  },
+  o = {
+    name = "Ollama",
+    c = { "<cmd>lua require('ollama').complete()<cr>", "Complete Code" }, -- Example: Code completion
+    g = { "<cmd>lua require('ollama').generate()<cr>", "Generate Text" }, -- Example: Text generation
+    e = { "<cmd>lua require('ollama').explain()<cr>", "Explain Code" }, -- Example: Explain code functionality
+    r = { "<cmd>lua require('ollama').refactor()<cr>", "Refactor Code" }, -- Example: Refactor code suggestions
+    t = { "<cmd>lua require('ollama').test()<cr>", "Generate Tests" },  -- Example: Generate test cases
+    h = { "<cmd>lua require('ollama').help()<cr>", "Get Help" },        -- Example: Get help or documentation
   },
 }
 

@@ -1,4 +1,3 @@
-
 require "adavidson.options.keymaps"
 require "adavidson.options.options"
 require "adavidson.plugins.alpha"
@@ -16,5 +15,5 @@ require "adavidson.plugins.comment"
 require "adavidson.plugins.gitsigns"
 require "adavidson.plugins.lualine"
 require "adavidson.plugins.indent-blankline"
-require "adavidson.plugins.ollama"
+require "adavidson.plugins.gen"
 require "adavidson.lazy"

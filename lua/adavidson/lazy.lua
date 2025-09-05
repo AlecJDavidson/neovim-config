@@ -1,6 +1,7 @@
 -- Lazy Plugin Manager Config
 local fn = vim.fn
 local lazypath = fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   fn.system({
     "git",
@@ -21,9 +22,12 @@ local plugins = {
 
   -- Gen.nvim
   -- Minimal configuration
-  -- { "David-Kunz/gen.nvim" },
-
-  -- Ollama.nvim
+  {
+    "David-Kunz/gen.nvim",
+    config = function()
+      require("adavidson.plugins.treesitter")
+    end,
+  },
 
   -- Svelte
   {
@@ -167,7 +171,7 @@ local plugins = {
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.5",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim", lazy = false },
   },
 
   -- Themes
