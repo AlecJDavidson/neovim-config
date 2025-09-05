@@ -15,5 +15,6 @@ require "adavidson.plugins.comment"
 require "adavidson.plugins.gitsigns"
 require "adavidson.plugins.lualine"
 require "adavidson.plugins.indent-blankline"
-require "adavidson.plugins.gen"
+require "adavidson.plugins.ollero"
 require "adavidson.lazy"
+
