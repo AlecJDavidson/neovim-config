@@ -67,13 +67,7 @@ local plugins = {
     end,
   },
 
-  {
-    "akinsho/bufferline.nvim",
-    version = "*",
-    dependencies = "nvim-tree/nvim-web-devicons",
-    -- opts = {},
-    -- config = function() require('adavidson.plugins.bufferline') end
-  },
+{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
   {
     "numToStr/Comment.nvim",
@@ -92,9 +86,8 @@ local plugins = {
   -- Lsp
 
   {
-    "williamboman/mason.nvim",
-    -- opts = {},
-    -- config = function() require('adavidson.plugins.lsp.mason') end
+    "mason-org/mason.nvim",
+    opts = {}
   },
 
   {
@@ -102,11 +95,6 @@ local plugins = {
     config = function()
       require("adavidson.plugins.lsp.null-ls")
     end,
-  },
-
-  {
-    "williamboman/mason-lspconfig.nvim",
-    -- opts = {},
   },
 
   {
